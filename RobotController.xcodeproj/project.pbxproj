@@ -1,0 +1,969 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1000001 /* RobotControllerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001 /* RobotControllerApp.swift */; };
+		A1000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000002 /* ContentView.swift */; };
+		A1000004 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000005 /* Models.swift */; };
+		A1000005 /* RobotTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000006 /* RobotTransport.swift */; };
+		A1000006 /* BLETransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000007 /* BLETransport.swift */; };
+		A1000008 /* RobotConnectionStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000009 /* RobotConnectionStateMachine.swift */; };
+		A1000007 /* RobotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000008 /* RobotViewModel.swift */; };
+		A1000009 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000A /* ChatViewModel.swift */; };
+		A100000A /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000B /* ChatView.swift */; };
+		A1000025 /* ChatComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000025 /* ChatComponents.swift */; };
+		A100000B /* VoiceInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000C /* VoiceInputManager.swift */; };
+		A1000022 /* VoiceInputSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000022 /* VoiceInputSupport.swift */; };
+		A100000C /* LLMProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000D /* LLMProvider.swift */; };
+		A100000D /* OnDeviceLLMProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000E /* OnDeviceLLMProvider.swift */; };
+		A100000E /* OpenAILLMProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000F /* OpenAILLMProvider.swift */; };
+		A100000F /* LLMSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000011 /* LLMSettingsView.swift */; };
+		A1000011 /* RealtimeAgentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000012 /* RealtimeAgentView.swift */; };
+		A1000023 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000023 /* MainTabView.swift */; };
+		A1000024 /* ControlsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000024 /* ControlsScreen.swift */; };
+		A1000013 /* CameraCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000013 /* CameraCapture.swift */; };
+		A1000014 /* DepthCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000014 /* DepthCapture.swift */; };
+		A1000015 /* DepthDebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000015 /* DepthDebugView.swift */; };
+		A1000016 /* AgentModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000016 /* AgentModels.swift */; };
+		A1000017 /* AgentExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000017 /* AgentExecutor.swift */; };
+		A1000018 /* TTSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000018 /* TTSManager.swift */; };
+		A1000021 /* TTSSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000021 /* TTSSupport.swift */; };
+		A1000019 /* AutonomousAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000019 /* AutonomousAgent.swift */; };
+		A100001A /* AutonomousAgentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200001A /* AutonomousAgentView.swift */; };
+		A1000026 /* AutonomousAgentComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000026 /* AutonomousAgentComponents.swift */; };
+		A100001B /* GeminiLLMProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200001B /* GeminiLLMProvider.swift */; };
+		A100001C /* GamepadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200001C /* GamepadManager.swift */; };
+		A100001D /* OccupancyGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200001D /* OccupancyGrid.swift */; };
+		A100001E /* FrontierExplorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200001E /* FrontierExplorer.swift */; };
+		A100001F /* ExplorerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200001F /* ExplorerView.swift */; };
+		A1000027 /* ExplorerComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000027 /* ExplorerComponents.swift */; };
+		A1000028 /* DepthDebugComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000028 /* DepthDebugComponents.swift */; };
+		A1000029 /* DepthDebugSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000029 /* DepthDebugSupport.swift */; };
+		A1000030 /* RealtimeAgentComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000030 /* RealtimeAgentComponents.swift */; };
+		A1000031 /* MainTabSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000031 /* MainTabSupport.swift */; };
+		A1000032 /* ControlsComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000032 /* ControlsComponents.swift */; };
+		A1000033 /* ControlsSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000033 /* ControlsSupport.swift */; };
+		A1000020 /* LiDARMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000020A /* LiDARMeasurement.swift */; };
+		C1000001 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000001 /* ChatMessage.swift */; };
+		C1000002 /* RobotPlanModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000002 /* RobotPlanModels.swift */; };
+		C1000003 /* LLMProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000003 /* LLMProviderType.swift */; };
+		C1000004 /* PlanExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000004 /* PlanExecutor.swift */; };
+		C1000005 /* RealtimeAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000005 /* RealtimeAgent.swift */; };
+		C1000006 /* LLMSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000006 /* LLMSettings.swift */; };
+		C1000007 /* ConnectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000007 /* ConnectionHeader.swift */; };
+		C1000008 /* SchemaHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000008 /* SchemaHelpers.swift */; };
+		C1000009 /* RobotRuntimeSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000009 /* RobotRuntimeSupport.swift */; };
+		C1000010 /* RobotRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = C200000A /* RobotRuntime.swift */; };
+		C1000011 /* BLEAdapters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C200000B /* BLEAdapters.swift */; };
+		C1000012 /* RobotCommandMappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C200000C /* RobotCommandMappers.swift */; };
+		C1000013 /* AgentCommandMappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C200000D /* AgentCommandMappers.swift */; };
+		C1000014 /* AutonomousAgentSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C200000E /* AutonomousAgentSupport.swift */; };
+		C1000015 /* AutonomousAgentLLMClients.swift in Sources */ = {isa = PBXBuildFile; fileRef = C200000F /* AutonomousAgentLLMClients.swift */; };
+		C1000016 /* RobotAppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000010 /* RobotAppDependencies.swift */; };
+		C1000017 /* RealtimeAgentSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000011 /* RealtimeAgentSupport.swift */; };
+		C1000018 /* RealtimeAudioSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000012 /* RealtimeAudioSupport.swift */; };
+		C1000019 /* RealtimeSessionSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000013 /* RealtimeSessionSupport.swift */; };
+		C1000020 /* RealtimeToolRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000014 /* RealtimeToolRunner.swift */; };
+		E3000001 /* JSONSchemaBuilder in Frameworks */ = {isa = PBXBuildFile; productRef = E2000001 /* JSONSchemaBuilder */; };
+		B1000001 /* MockTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000001 /* MockTransport.swift */; };
+		B1000002 /* RobotValueTypesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000002 /* RobotValueTypesTests.swift */; };
+		B1000003 /* RobotViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000003 /* RobotViewModelTests.swift */; };
+		B1000004 /* RobotCommandExecutorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000004 /* RobotCommandExecutorTests.swift */; };
+		B1000005 /* RobotConnectionStateMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000005 /* RobotConnectionStateMachineTests.swift */; };
+		B1000006 /* RobotCommandMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000006 /* RobotCommandMapperTests.swift */; };
+		B1000007 /* RobotRuntimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000007 /* RobotRuntimeTests.swift */; };
+		B1000008 /* AutonomousAgentSupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000008 /* AutonomousAgentSupportTests.swift */; };
+		B1000009 /* RealtimeSupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000009 /* RealtimeSupportTests.swift */; };
+		B100000A /* TTSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000A /* TTSTests.swift */; };
+		B100000B /* VoiceInputManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000B /* VoiceInputManagerTests.swift */; };
+		B100000C /* BLETransportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000C /* BLETransportTests.swift */; };
+		B100000D /* AgentLLMTestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000D /* AgentLLMTestSupport.swift */; };
+		B100000E /* AsyncTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000E /* AsyncTestHelpers.swift */; };
+		B100000F /* AudioTestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000F /* AudioTestSupport.swift */; };
+		B1000011 /* ExecutorTestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000011 /* ExecutorTestSupport.swift */; };
+		B1000012 /* RuntimeTestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000012 /* RuntimeTestSupport.swift */; };
+		B1000013 /* PerceptionMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000013 /* PerceptionMathTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5000001;
+			remoteInfo = RobotController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A2000001 /* RobotControllerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotControllerApp.swift; sourceTree = "<group>"; };
+		A2000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A2000004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2000005 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A2000006 /* RobotTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotTransport.swift; sourceTree = "<group>"; };
+		A2000007 /* BLETransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLETransport.swift; sourceTree = "<group>"; };
+		A2000009 /* RobotConnectionStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotConnectionStateMachine.swift; sourceTree = "<group>"; };
+		A2000008 /* RobotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotViewModel.swift; sourceTree = "<group>"; };
+		A200000A /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		A200000B /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		A2000025 /* ChatComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatComponents.swift; sourceTree = "<group>"; };
+		A200000C /* VoiceInputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceInputManager.swift; sourceTree = "<group>"; };
+		A2000022 /* VoiceInputSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceInputSupport.swift; sourceTree = "<group>"; };
+		A2000023 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		A2000024 /* ControlsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsScreen.swift; sourceTree = "<group>"; };
+		A200000D /* LLMProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMProvider.swift; sourceTree = "<group>"; };
+		A200000E /* OnDeviceLLMProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDeviceLLMProvider.swift; sourceTree = "<group>"; };
+		A200000F /* OpenAILLMProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAILLMProvider.swift; sourceTree = "<group>"; };
+		A2000011 /* LLMSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMSettingsView.swift; sourceTree = "<group>"; };
+		A2000012 /* RealtimeAgentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeAgentView.swift; sourceTree = "<group>"; };
+		A2000013 /* CameraCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCapture.swift; sourceTree = "<group>"; };
+		A2000014 /* DepthCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthCapture.swift; sourceTree = "<group>"; };
+		A2000015 /* DepthDebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthDebugView.swift; sourceTree = "<group>"; };
+		A2000016 /* AgentModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentModels.swift; sourceTree = "<group>"; };
+		A2000017 /* AgentExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentExecutor.swift; sourceTree = "<group>"; };
+		A2000018 /* TTSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSManager.swift; sourceTree = "<group>"; };
+		A2000021 /* TTSSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSSupport.swift; sourceTree = "<group>"; };
+		A2000019 /* AutonomousAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutonomousAgent.swift; sourceTree = "<group>"; };
+		A200001A /* AutonomousAgentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutonomousAgentView.swift; sourceTree = "<group>"; };
+		A2000026 /* AutonomousAgentComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutonomousAgentComponents.swift; sourceTree = "<group>"; };
+		A200001B /* GeminiLLMProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiLLMProvider.swift; sourceTree = "<group>"; };
+		A200001C /* GamepadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamepadManager.swift; sourceTree = "<group>"; };
+		A200001D /* OccupancyGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OccupancyGrid.swift; sourceTree = "<group>"; };
+		A200001E /* FrontierExplorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontierExplorer.swift; sourceTree = "<group>"; };
+		A200001F /* ExplorerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerView.swift; sourceTree = "<group>"; };
+		A2000027 /* ExplorerComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerComponents.swift; sourceTree = "<group>"; };
+		A2000028 /* DepthDebugComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthDebugComponents.swift; sourceTree = "<group>"; };
+		A2000029 /* DepthDebugSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthDebugSupport.swift; sourceTree = "<group>"; };
+		A2000030 /* RealtimeAgentComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeAgentComponents.swift; sourceTree = "<group>"; };
+		A2000031 /* MainTabSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabSupport.swift; sourceTree = "<group>"; };
+		A2000032 /* ControlsComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsComponents.swift; sourceTree = "<group>"; };
+		A2000033 /* ControlsSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsSupport.swift; sourceTree = "<group>"; };
+		A2000020A /* LiDARMeasurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiDARMeasurement.swift; sourceTree = "<group>"; };
+		C2000001 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		C2000002 /* RobotPlanModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotPlanModels.swift; sourceTree = "<group>"; };
+		C2000003 /* LLMProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMProviderType.swift; sourceTree = "<group>"; };
+		C2000004 /* PlanExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanExecutor.swift; sourceTree = "<group>"; };
+		C2000005 /* RealtimeAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeAgent.swift; sourceTree = "<group>"; };
+		C2000006 /* LLMSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMSettings.swift; sourceTree = "<group>"; };
+		C2000007 /* ConnectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionHeader.swift; sourceTree = "<group>"; };
+		C2000008 /* SchemaHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemaHelpers.swift; sourceTree = "<group>"; };
+		C2000009 /* RobotRuntimeSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotRuntimeSupport.swift; sourceTree = "<group>"; };
+		C200000A /* RobotRuntime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotRuntime.swift; sourceTree = "<group>"; };
+		C200000B /* BLEAdapters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEAdapters.swift; sourceTree = "<group>"; };
+		C200000C /* RobotCommandMappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotCommandMappers.swift; sourceTree = "<group>"; };
+		C200000D /* AgentCommandMappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentCommandMappers.swift; sourceTree = "<group>"; };
+		C200000E /* AutonomousAgentSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutonomousAgentSupport.swift; sourceTree = "<group>"; };
+		C200000F /* AutonomousAgentLLMClients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutonomousAgentLLMClients.swift; sourceTree = "<group>"; };
+		C2000010 /* RobotAppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotAppDependencies.swift; sourceTree = "<group>"; };
+		C2000011 /* RealtimeAgentSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeAgentSupport.swift; sourceTree = "<group>"; };
+		C2000012 /* RealtimeAudioSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeAudioSupport.swift; sourceTree = "<group>"; };
+		C2000013 /* RealtimeSessionSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeSessionSupport.swift; sourceTree = "<group>"; };
+		C2000014 /* RealtimeToolRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeToolRunner.swift; sourceTree = "<group>"; };
+		A2000010 /* RobotController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobotController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2000020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2000001 /* MockTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTransport.swift; sourceTree = "<group>"; };
+		B2000002 /* RobotValueTypesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotValueTypesTests.swift; sourceTree = "<group>"; };
+		B2000003 /* RobotViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotViewModelTests.swift; sourceTree = "<group>"; };
+		B2000004 /* RobotCommandExecutorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotCommandExecutorTests.swift; sourceTree = "<group>"; };
+		B2000005 /* RobotConnectionStateMachineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotConnectionStateMachineTests.swift; sourceTree = "<group>"; };
+		B2000006 /* RobotCommandMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotCommandMapperTests.swift; sourceTree = "<group>"; };
+		B2000007 /* RobotRuntimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotRuntimeTests.swift; sourceTree = "<group>"; };
+		B2000008 /* AutonomousAgentSupportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutonomousAgentSupportTests.swift; sourceTree = "<group>"; };
+		B2000009 /* RealtimeSupportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeSupportTests.swift; sourceTree = "<group>"; };
+		B200000A /* TTSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSTests.swift; sourceTree = "<group>"; };
+		B200000B /* VoiceInputManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceInputManagerTests.swift; sourceTree = "<group>"; };
+		B200000C /* BLETransportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLETransportTests.swift; sourceTree = "<group>"; };
+		B200000D /* AgentLLMTestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentLLMTestSupport.swift; sourceTree = "<group>"; };
+		B200000E /* AsyncTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTestHelpers.swift; sourceTree = "<group>"; };
+		B200000F /* AudioTestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTestSupport.swift; sourceTree = "<group>"; };
+		B2000010 /* RobotControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobotControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2000011 /* ExecutorTestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutorTestSupport.swift; sourceTree = "<group>"; };
+		B2000012 /* RuntimeTestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeTestSupport.swift; sourceTree = "<group>"; };
+		B2000013 /* PerceptionMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerceptionMathTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3000001 /* JSONSchemaBuilder in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4000001 = {
+			isa = PBXGroup;
+			children = (
+				A4000002 /* RobotController */,
+				B4000001 /* RobotControllerTests */,
+				A4000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4000002 /* RobotController */ = {
+			isa = PBXGroup;
+			children = (
+				D4000001 /* App */,
+				D4000002 /* Core */,
+				D4000003 /* Infrastructure */,
+				D4000004 /* Features */,
+				D4000005 /* SharedUI */,
+				D4000006 /* Settings */,
+				A2000020 /* Assets.xcassets */,
+				A2000004 /* Info.plist */,
+			);
+			path = RobotController;
+			sourceTree = "<group>";
+		};
+		D4000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001 /* RobotControllerApp.swift */,
+				A2000002 /* ContentView.swift */,
+				A2000023 /* MainTabView.swift */,
+				A2000031 /* MainTabSupport.swift */,
+				C2000010 /* RobotAppDependencies.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D4000002 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D4000007 /* Models */,
+				D4000008 /* Robot */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D4000003 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				D4000009 /* Transport */,
+				D4000010 /* LLM */,
+				D4000011 /* Perception */,
+				D4000012 /* Audio */,
+				D4000013 /* Input */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		D4000004 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D4000014 /* Chat */,
+				D4000015 /* Controls */,
+				D4000016 /* Autonomous */,
+				D4000017 /* Realtime */,
+				D4000018 /* Explorer */,
+				D4000019 /* Diagnostics */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D4000005 /* SharedUI */ = {
+			isa = PBXGroup;
+			children = (
+				C2000007 /* ConnectionHeader.swift */,
+			);
+			path = SharedUI;
+			sourceTree = "<group>";
+		};
+		D4000006 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C2000006 /* LLMSettings.swift */,
+				A2000011 /* LLMSettingsView.swift */,
+				C2000003 /* LLMProviderType.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D4000007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A2000005 /* Models.swift */,
+				C2000008 /* SchemaHelpers.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D4000008 /* Robot */ = {
+			isa = PBXGroup;
+			children = (
+				A2000006 /* RobotTransport.swift */,
+				A2000009 /* RobotConnectionStateMachine.swift */,
+				C2000009 /* RobotRuntimeSupport.swift */,
+				C200000A /* RobotRuntime.swift */,
+				C200000C /* RobotCommandMappers.swift */,
+				C200000D /* AgentCommandMappers.swift */,
+				A2000008 /* RobotViewModel.swift */,
+			);
+			path = Robot;
+			sourceTree = "<group>";
+		};
+		D4000009 /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				C200000B /* BLEAdapters.swift */,
+				A2000007 /* BLETransport.swift */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		D4000010 /* LLM */ = {
+			isa = PBXGroup;
+			children = (
+				A200000D /* LLMProvider.swift */,
+				A200000F /* OpenAILLMProvider.swift */,
+				A200001B /* GeminiLLMProvider.swift */,
+				A200000E /* OnDeviceLLMProvider.swift */,
+			);
+			path = LLM;
+			sourceTree = "<group>";
+		};
+		D4000011 /* Perception */ = {
+			isa = PBXGroup;
+			children = (
+				A2000013 /* CameraCapture.swift */,
+				A2000014 /* DepthCapture.swift */,
+				A2000020A /* LiDARMeasurement.swift */,
+			);
+			path = Perception;
+			sourceTree = "<group>";
+		};
+		D4000012 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				A2000018 /* TTSManager.swift */,
+				A2000021 /* TTSSupport.swift */,
+				A200000C /* VoiceInputManager.swift */,
+				A2000022 /* VoiceInputSupport.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		D4000013 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				A200001C /* GamepadManager.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		D4000014 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				A200000A /* ChatViewModel.swift */,
+				C2000001 /* ChatMessage.swift */,
+				C2000002 /* RobotPlanModels.swift */,
+				C2000004 /* PlanExecutor.swift */,
+				A200000B /* ChatView.swift */,
+				A2000025 /* ChatComponents.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		D4000015 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				A2000024 /* ControlsScreen.swift */,
+				A2000032 /* ControlsComponents.swift */,
+				A2000033 /* ControlsSupport.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		D4000016 /* Autonomous */ = {
+			isa = PBXGroup;
+			children = (
+				A2000017 /* AgentExecutor.swift */,
+				A2000016 /* AgentModels.swift */,
+				A2000019 /* AutonomousAgent.swift */,
+				C200000E /* AutonomousAgentSupport.swift */,
+				C200000F /* AutonomousAgentLLMClients.swift */,
+				A200001A /* AutonomousAgentView.swift */,
+				A2000026 /* AutonomousAgentComponents.swift */,
+			);
+			path = Autonomous;
+			sourceTree = "<group>";
+		};
+		D4000017 /* Realtime */ = {
+			isa = PBXGroup;
+			children = (
+				C2000005 /* RealtimeAgent.swift */,
+				C2000011 /* RealtimeAgentSupport.swift */,
+				C2000012 /* RealtimeAudioSupport.swift */,
+				C2000013 /* RealtimeSessionSupport.swift */,
+				C2000014 /* RealtimeToolRunner.swift */,
+				A2000012 /* RealtimeAgentView.swift */,
+				A2000030 /* RealtimeAgentComponents.swift */,
+			);
+			path = Realtime;
+			sourceTree = "<group>";
+		};
+		D4000018 /* Explorer */ = {
+			isa = PBXGroup;
+			children = (
+				A200001E /* FrontierExplorer.swift */,
+				A200001D /* OccupancyGrid.swift */,
+				A200001F /* ExplorerView.swift */,
+				A2000027 /* ExplorerComponents.swift */,
+			);
+			path = Explorer;
+			sourceTree = "<group>";
+		};
+		D4000019 /* Diagnostics */ = {
+			isa = PBXGroup;
+			children = (
+				A2000015 /* DepthDebugView.swift */,
+				A2000028 /* DepthDebugComponents.swift */,
+				A2000029 /* DepthDebugSupport.swift */,
+			);
+			path = Diagnostics;
+			sourceTree = "<group>";
+		};
+		A4000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2000010 /* RobotController.app */,
+				B2000010 /* RobotControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4000001 /* RobotControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4000002 /* Core */,
+				B4000003 /* Features */,
+				B4000004 /* Infrastructure */,
+				B4000005 /* TestSupport */,
+			);
+			path = RobotControllerTests;
+			sourceTree = "<group>";
+		};
+		B4000002 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B4000006 /* Models */,
+				B4000007 /* Robot */,
+				B4000008 /* Runtime */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B4000003 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				B4000009 /* Autonomous */,
+				B400000A /* Realtime */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		B4000004 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				B400000B /* Audio */,
+				B400000D /* Perception */,
+				B400000C /* Transport */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		B4000005 /* TestSupport */ = {
+			isa = PBXGroup;
+			children = (
+				B200000D /* AgentLLMTestSupport.swift */,
+				B200000E /* AsyncTestHelpers.swift */,
+				B200000F /* AudioTestSupport.swift */,
+				B2000011 /* ExecutorTestSupport.swift */,
+				B2000001 /* MockTransport.swift */,
+				B2000012 /* RuntimeTestSupport.swift */,
+			);
+			path = TestSupport;
+			sourceTree = "<group>";
+		};
+		B4000006 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2000002 /* RobotValueTypesTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B4000007 /* Robot */ = {
+			isa = PBXGroup;
+			children = (
+				B2000005 /* RobotConnectionStateMachineTests.swift */,
+				B2000006 /* RobotCommandMapperTests.swift */,
+				B2000003 /* RobotViewModelTests.swift */,
+			);
+			path = Robot;
+			sourceTree = "<group>";
+		};
+		B4000008 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				B2000004 /* RobotCommandExecutorTests.swift */,
+				B2000007 /* RobotRuntimeTests.swift */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		B4000009 /* Autonomous */ = {
+			isa = PBXGroup;
+			children = (
+				B2000008 /* AutonomousAgentSupportTests.swift */,
+			);
+			path = Autonomous;
+			sourceTree = "<group>";
+		};
+		B400000A /* Realtime */ = {
+			isa = PBXGroup;
+			children = (
+				B2000009 /* RealtimeSupportTests.swift */,
+			);
+			path = Realtime;
+			sourceTree = "<group>";
+		};
+		B400000B /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				B200000A /* TTSTests.swift */,
+				B200000B /* VoiceInputManagerTests.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		B400000C /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				B200000C /* BLETransportTests.swift */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		B400000D /* Perception */ = {
+			isa = PBXGroup;
+			children = (
+				B2000013 /* PerceptionMathTests.swift */,
+			);
+			path = Perception;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5000001 /* RobotController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7000003 /* Build configuration list for PBXNativeTarget "RobotController" */;
+			buildPhases = (
+				A6000001 /* Sources */,
+				A3000001 /* Frameworks */,
+				A6000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RobotController;
+			packageProductDependencies = (
+				E2000001 /* JSONSchemaBuilder */,
+			);
+			productName = RobotController;
+			productReference = A2000010 /* RobotController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5000001 /* RobotControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7000001 /* Build configuration list for PBXNativeTarget "RobotControllerTests" */;
+			buildPhases = (
+				B6000001 /* Sources */,
+				B3000002 /* Frameworks */,
+				B6000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3000003 /* PBXTargetDependency */,
+			);
+			name = RobotControllerTests;
+			productName = RobotControllerTests;
+			productReference = B2000010 /* RobotControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A5000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					B5000001 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A5000001;
+					};
+				};
+			};
+			buildConfigurationList = A7000001 /* Build configuration list for PBXProject "RobotController" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4000001;
+			packageReferences = (
+				E1000001 /* XCRemoteSwiftPackageReference "swift-json-schema" */,
+			);
+			productRefGroup = A4000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5000001 /* RobotController */,
+				B5000001 /* RobotControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000001 /* RobotControllerApp.swift in Sources */,
+				A1000004 /* Models.swift in Sources */,
+				A1000016 /* AgentModels.swift in Sources */,
+				C1000001 /* ChatMessage.swift in Sources */,
+				C1000002 /* RobotPlanModels.swift in Sources */,
+				C1000003 /* LLMProviderType.swift in Sources */,
+				C1000008 /* SchemaHelpers.swift in Sources */,
+				A1000005 /* RobotTransport.swift in Sources */,
+				A1000008 /* RobotConnectionStateMachine.swift in Sources */,
+				C1000011 /* BLEAdapters.swift in Sources */,
+				A1000006 /* BLETransport.swift in Sources */,
+				A100000C /* LLMProvider.swift in Sources */,
+				A100000E /* OpenAILLMProvider.swift in Sources */,
+				A100001B /* GeminiLLMProvider.swift in Sources */,
+				A100000D /* OnDeviceLLMProvider.swift in Sources */,
+				A1000013 /* CameraCapture.swift in Sources */,
+				A1000014 /* DepthCapture.swift in Sources */,
+				A1000020 /* LiDARMeasurement.swift in Sources */,
+				A100001D /* OccupancyGrid.swift in Sources */,
+				C1000009 /* RobotRuntimeSupport.swift in Sources */,
+				C1000010 /* RobotRuntime.swift in Sources */,
+				C1000012 /* RobotCommandMappers.swift in Sources */,
+				C1000013 /* AgentCommandMappers.swift in Sources */,
+				C1000014 /* AutonomousAgentSupport.swift in Sources */,
+				C1000015 /* AutonomousAgentLLMClients.swift in Sources */,
+				C1000016 /* RobotAppDependencies.swift in Sources */,
+				C1000017 /* RealtimeAgentSupport.swift in Sources */,
+				C1000018 /* RealtimeAudioSupport.swift in Sources */,
+				C1000019 /* RealtimeSessionSupport.swift in Sources */,
+				C1000020 /* RealtimeToolRunner.swift in Sources */,
+				A1000017 /* AgentExecutor.swift in Sources */,
+				A1000019 /* AutonomousAgent.swift in Sources */,
+				C1000004 /* PlanExecutor.swift in Sources */,
+				A100001E /* FrontierExplorer.swift in Sources */,
+				C1000005 /* RealtimeAgent.swift in Sources */,
+				A1000007 /* RobotViewModel.swift in Sources */,
+				A1000009 /* ChatViewModel.swift in Sources */,
+				C1000006 /* LLMSettings.swift in Sources */,
+				A100000B /* VoiceInputManager.swift in Sources */,
+				A1000022 /* VoiceInputSupport.swift in Sources */,
+				A1000018 /* TTSManager.swift in Sources */,
+				A1000021 /* TTSSupport.swift in Sources */,
+				A100001C /* GamepadManager.swift in Sources */,
+				A1000002 /* ContentView.swift in Sources */,
+				A1000023 /* MainTabView.swift in Sources */,
+				A1000024 /* ControlsScreen.swift in Sources */,
+				A1000032 /* ControlsComponents.swift in Sources */,
+				A1000033 /* ControlsSupport.swift in Sources */,
+				C1000007 /* ConnectionHeader.swift in Sources */,
+				A1000031 /* MainTabSupport.swift in Sources */,
+				A100000A /* ChatView.swift in Sources */,
+				A1000025 /* ChatComponents.swift in Sources */,
+				A100001A /* AutonomousAgentView.swift in Sources */,
+				A1000026 /* AutonomousAgentComponents.swift in Sources */,
+				A1000011 /* RealtimeAgentView.swift in Sources */,
+				A1000030 /* RealtimeAgentComponents.swift in Sources */,
+				A100001F /* ExplorerView.swift in Sources */,
+				A1000027 /* ExplorerComponents.swift in Sources */,
+				A1000015 /* DepthDebugView.swift in Sources */,
+				A1000028 /* DepthDebugComponents.swift in Sources */,
+				A1000029 /* DepthDebugSupport.swift in Sources */,
+				A100000F /* LLMSettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B100000D /* AgentLLMTestSupport.swift in Sources */,
+				B100000E /* AsyncTestHelpers.swift in Sources */,
+				B100000F /* AudioTestSupport.swift in Sources */,
+				B1000008 /* AutonomousAgentSupportTests.swift in Sources */,
+				B100000C /* BLETransportTests.swift in Sources */,
+				B1000011 /* ExecutorTestSupport.swift in Sources */,
+				B1000001 /* MockTransport.swift in Sources */,
+				B1000013 /* PerceptionMathTests.swift in Sources */,
+				B1000009 /* RealtimeSupportTests.swift in Sources */,
+				B1000002 /* RobotValueTypesTests.swift in Sources */,
+				B1000005 /* RobotConnectionStateMachineTests.swift in Sources */,
+				B1000006 /* RobotCommandMapperTests.swift in Sources */,
+				B1000004 /* RobotCommandExecutorTests.swift in Sources */,
+				B1000007 /* RobotRuntimeTests.swift in Sources */,
+				B1000003 /* RobotViewModelTests.swift in Sources */,
+				B1000012 /* RuntimeTestSupport.swift in Sources */,
+				B100000A /* TTSTests.swift in Sources */,
+				B100000B /* VoiceInputManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3000003 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5000001 /* RobotController */;
+			targetProxy = B3000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A9000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EEJA65ZWYD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RobotController/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Robot Controller";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth to connect to and control your XStRobot.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ray.RobotController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EEJA65ZWYD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RobotController/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Robot Controller";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth to connect to and control your XStRobot.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ray.RobotController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B9000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EEJA65ZWYD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ray.RobotControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RobotController.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RobotController";
+			};
+			name = Debug;
+		};
+		B9000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EEJA65ZWYD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ray.RobotControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RobotController.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RobotController";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7000001 /* Build configuration list for PBXProject "RobotController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9000001 /* Debug */,
+				A9000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7000003 /* Build configuration list for PBXNativeTarget "RobotController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9000003 /* Debug */,
+				A9000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7000001 /* Build configuration list for PBXNativeTarget "RobotControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9000001 /* Debug */,
+				B9000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E1000001 /* XCRemoteSwiftPackageReference "swift-json-schema" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ajevans99/swift-json-schema";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.11.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E2000001 /* JSONSchemaBuilder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1000001 /* XCRemoteSwiftPackageReference "swift-json-schema" */;
+			productName = JSONSchemaBuilder;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+	};
+	rootObject = A8000001 /* Project object */;
+}
